@@ -30,9 +30,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/TMraz/Clipboard-landing-page.github.io)
+- [Solution URL](https://github.com/TMraz/Huddle-landing-page.github.io)
 
-- [Live Site URL](https://tmraz.github.io/Clipboard-landing-page.github.io/)
+- [Live Site URL](https://tmraz.github.io/Huddle-landing-page.github.io/)
 
 ## My process
 
