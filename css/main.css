@@ -1,0 +1,183 @@
+
+html, body {
+    text-align: left;
+}
+
+
+main {
+    width: 1440px;
+    height: auto;
+}
+
+h1, h2 {
+    margin: 1rem ;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--color-font-dark);
+    opacity: 1;
+    padding: .5rem;
+    margin: 1rem .5rem;
+}
+
+.btn {
+    padding: 1.5rem 5rem;
+    border-radius: 4rem;
+}
+
+/* === HEADER === */
+.main-header {
+    width: 100%;
+    height: auto;
+
+    background: url(../img/bg-hero-desktop.svg) var(--color-bg-header) no-repeat;
+}
+
+.nav-menu {
+    padding: 3rem 4rem;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.nav-menu .btn {
+    padding: 1.2rem 4rem;
+}
+
+.main-header .description {
+    width: 38%;
+    padding-top: 6rem;
+    margin: 1rem 1rem 1rem 4rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.mockup {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.mockup img {
+    width: 90%;
+    margin: 2rem 0;
+}
+
+.text {
+    padding: 0 10rem 0 5rem;
+    margin: auto;
+}
+
+/* === ARTICLE === */
+article {
+    padding: 6rem;
+    margin: 2rem 0;
+}
+
+/* === SECTION === */
+section {
+    width: auto;
+    height: auto;
+    padding: 1rem 1rem 1rem 3rem;
+    margin: 3rem 0;
+    box-shadow: rgba(204, 204, 204, 0.4) 0px 0 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* === ASIDE === */
+aside {
+    width: 60%;
+    box-shadow: rgba(204, 204, 204, 0.4) 0px 0 20px;
+
+    bottom: 13%;
+    text-align: center;
+}
+
+/* === FOOTER === */
+footer {
+    background: var(--color-font-dark);
+
+    padding: 6rem 3rem 4rem 6rem;
+    display: flex;
+}
+
+/*=== contact list style ===*/
+.contact {
+    width: 40%;
+    margin-right: 5rem;
+    text-align: left;
+}
+
+address {
+    line-height: 1.5;
+    color: var(--color-font-light); 
+    opacity: .7;
+}
+
+
+.tel a, .mail a {
+    color: var(--color-font-light); 
+    opacity: .7;
+}
+
+/* === about list style=== */
+.about-list {
+    width: 20%;
+    margin: 5rem .5rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-list li {
+    color: var(--color-font-light); 
+    opacity: .7;
+}
+
+/* === social list style=== */
+.social {
+    margin: 6rem auto;
+}
+
+.social ul [class*="fa fa-"]{
+    color: var(--color-font-light); 
+    opacity: .7;
+}
+
+.attribution {
+    color: var(--color-font-light);
+    opacity: .7;
+    height: 1.5rem;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.attribution a { 
+    color: var(--color-font-light);
+    opacity: .7;
+}
+
+
+
+

@@ -1,0 +1,304 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap);
+
+:root {
+    --color-font-dark: hsl(192, 100%, 9%);
+    --color-font-light: hsl(0, 0%, 95%);
+    --color-bg-main: hsl(0, 0%, 100%);
+    --color-bg-header: hsl(193, 100%, 96%);
+    --color-bg-footer: hsl(208, 11%, 55%);
+    --color-btn: hsl(322, 100%, 66%);
+
+    --ff: 'Open Sans', sans-serif; /*body, call to action*/
+    --fh: 'Poppins', sans-serif; /*heading*/
+}
+
+:hover {outline: 1px dotted rgb(153, 51, 144);}
+
+/* === GENERAL === */
+html { box-sizing: border-box; }
+*, *:before, *:after { 
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit; 
+}
+
+html, body {
+    font-size: 100%;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-font-dark);
+    font-family: var(--ff);
+}
+
+body {
+    width: auto;
+    height: auto;
+
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 370px;
+    height: 100%;
+    padding: 0;
+    margin-top: 0;
+    background: var(--color-bg-main);
+
+    position: relative;
+}
+
+h1, h2, h3 {
+    font-family: var(--fh);
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-font-heading);
+    margin: 1rem 2.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-font-dark);
+    opacity: .5;
+    padding: .5rem;
+    margin: 1rem .5rem;
+}
+
+a {
+    font-size: .8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-font-light);
+
+    background: var(--color-btn);
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    cursor: pointer;
+    background: var(--color-btn);
+    opacity: .5;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    padding: .9rem 3rem;
+    margin: 1rem 0;
+    border-radius: 3rem;
+    box-shadow: rgba(204, 204, 204, 0.5) 0px 4px 2px;
+}
+
+/* === HEADER === */
+.main-header {
+    width: 100%;
+    height: auto;
+
+    background: url(../img/bg-hero-mobile.svg) var(--color-bg-header) no-repeat;
+}
+
+.nav-menu {
+    padding: 1rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: auto 0;
+    height: 1rem;
+}
+
+.nav-menu .btn {
+    font-weight: 600;
+    color: var(--color-font-dark);
+    padding: .4rem 1.3rem;
+    margin: 0;
+
+    background: var(--color-bg-main);
+    box-shadow: rgba(204, 204, 204, 0.5) 0px 4px 15px;
+}
+
+.mockup {
+    margin: 1rem 0;
+}
+
+.mockup img {
+    width: 80%;
+    margin: 2rem 0;
+
+}
+
+/* === ARTICLE === */
+article {
+    padding: .6rem;
+    margin: 2rem 0;
+}
+
+section {
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    box-shadow: rgba(204, 204, 204, 0.4) 0px 0 10px;
+}
+
+section:last-child {
+    margin-bottom: 3rem;
+}
+
+/* === ASIDE === */
+aside {
+    width: 95%;
+    background: var(--color-bg-main);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(204, 204, 204, 0.4) 0px 0 10px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 21%;
+
+}
+
+/* === FOOTER === */
+footer {
+    color: var(--color-font-light);
+    background: var(--color-bg-footer);
+
+    padding: 6rem 1rem 1rem 1rem;
+    margin-top: 10rem;
+}
+
+/*=== contact list style ===*/
+.contact {
+    text-align: left;
+}
+
+
+ /* change of the svg color */
+ /* https://www.codegrepper.com/code-examples/css/how+to+change+the+color+of+svg+using+css */
+.contact img {
+    filter: invert(50%) sepia(76%) saturate(0%) hue-rotate(1deg) brightness(100%) contrast(1000%);
+
+    height: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.contact-list {
+    font-size: 1rem;
+    margin-left: 2rem;
+    list-style-position: outside; 
+}
+
+.contact-list li {
+    font-size: 1rem;
+    padding-left: .5rem;
+    padding-right: 2rem;
+    margin: 1.5rem 0;
+}
+
+ /* change of list style type to svg */
+.contact-list li:first-child {
+    list-style-image: url(../img/icon-location.svg);
+}
+
+address {
+    color: var(--color-font-light); 
+    opacity: 1;
+    font-style: normal;
+}
+
+.contact-list .tel {
+    list-style-image: url(../img/icon-phone.svg);
+}
+
+.contact-list .mail {
+    list-style-image: url(../img/icon-email.svg);
+}
+
+.tel a, .mail a {
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    background: none;
+}
+
+/* === about list style=== */
+.about-list {
+    margin: 3rem .5rem;
+    text-align: left;
+}
+
+.about-list li {
+    list-style-type: none;
+    margin: 1.5rem 0;
+}
+
+.about-list li:active,
+.about-list li:hover {
+    cursor: pointer;
+}
+
+/* === social list style=== */
+.social ul [class*="fa fa-"]{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: auto 3px;
+    width: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.social-item {
+    margin: .1rem;
+    display: inline-block;
+    list-style: none;
+}
+
+.social [class*="fa fa-"]:hover,
+.social [class*="fa fa-"]:active {
+    border: 1px solid var(--color-btn);
+    color: var(--color-btn);
+    cursor: pointer;
+}
+
+.attribution { font-size: 10px; text-align: center; color: var(--color-atribution)}
+.attribution a { 
+    font-size: 10px;
+    color: var(--color-atribution); 
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
